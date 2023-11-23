@@ -1,1 +1,32 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+	--general-font: 'Inter-Variable', Arial, Helvetica, sans-serif;
+	--accent-font: 'PressStart2P', Arial, Helvetica, sans-serif;
+	--wgth-text: 400;
+	--wgth-title: 700;
+	--bg-color: #fff;
+	--color: #000;
+  --color-rgb: 0, 0, 0;
+  --title-padding: 136px;
+  --pseudo-gap: 6px;
+  --border: 2px solid currentColor;
+	--bg-image: repeating-linear-gradient(
+			to right,
+			#d3d3d3,
+			#d3d3d3 2px,
+			rgba(211, 211, 211, 0) 2px,
+			rgba(211, 211, 211, 0) 4px
+		),
+    repeating-linear-gradient(
+			to bottom,
+			#d3d3d3,
+			#d3d3d3 2px,
+			rgba(211, 211, 211, 0) 2px,
+			rgba(211, 211, 211, 0) 4px
+		),
+		linear-gradient(
+			to bottom,
+			#e7e7e7 0.01%,
+			#1a1a1a
+		);
+}

@@ -4,3 +4,89 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+
+:root.theme-light {
+  --wgth-text: 400;
+  --wgth-title: 700;
+  --bg-color: #fff;
+  --color: #000;
+  --color-rgb: 0, 0, 0;
+  --bg-image: repeating-linear-gradient(
+			to right,
+			#d3d3d3,
+			#d3d3d3 2px,
+			rgba(211, 211, 211, 0) 2px,
+			rgba(211, 211, 211, 0) 4px
+		),
+    repeating-linear-gradient(
+			to bottom,
+			#d3d3d3,
+			#d3d3d3 2px,
+			rgba(211, 211, 211, 0) 2px,
+			rgba(211, 211, 211, 0) 4px
+		),
+		linear-gradient(
+			to bottom,
+			#e7e7e7 0.01%,
+			#1a1a1a
+		);
+}
+
+:root.theme-dark {
+  --bg-color: #000;
+  --color: #00CC14;
+  --color-rgb: 0, 204, 20;
+  --bg-image: repeating-linear-gradient(
+			to right,
+			#000,
+			#000 2px,
+			rgba(211, 211, 211, 0) 2px,
+			rgba(211, 211, 211, 0) 4px
+		),
+    repeating-linear-gradient(
+			to bottom,
+			#000,
+			#000 2px,
+			rgba(0, 0, 0, 0) 2px,
+			rgba(0, 0, 0, 0) 4px
+		),
+		linear-gradient(
+			to bottom,
+			#007f0c,
+			#004306
+		);
+}
+
+.theme-dark .main {
+  --wgth-text: 465;
+  --wgth-title: 785;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+  --wgth-text: 465;
+  --wgth-title: 785;
+  --bg-color: #000;
+  --color: #00CC14;
+  --color-rgb: 0, 204, 20;
+  --bg-image: repeating-linear-gradient(
+			to right,
+			#000,
+			#000 2px,
+			rgba(211, 211, 211, 0) 2px,
+			rgba(211, 211, 211, 0) 4px
+		),
+    repeating-linear-gradient(
+			to bottom,
+			#000,
+			#000 2px,
+			rgba(0, 0, 0, 0) 2px,
+			rgba(0, 0, 0, 0) 4px
+		),
+		linear-gradient(
+			to bottom,
+			#007f0c,
+			#004306
+		);
+  }
+}

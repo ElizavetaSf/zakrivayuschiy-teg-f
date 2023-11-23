@@ -14,7 +14,143 @@
 
 */
 
+.page,
+.header,
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  font-family: var(--general-font);
+  font-style: normal;
+  font-size: 18px;
+  font-variation-settings: 'wgth' var(--wgth-text);
+  color: var(--color);
+  line-height: normal;
+  background-image: var(--bg-image);
+  background-color: var(--bg-color);
+  background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.header,
+.main__card {
+  inline-size: clamp(40%, 696px, 100%);
+  border: var(--border);
+  background-color: var(--bg-color);
+}
+
+.header {
+  margin-block: 100px;
+  font-family: var(--accent-font);
+  text-transform: uppercase;
+}
+
+.header__logo {
+  padding-block: var(--title-padding) 20px;
+  font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  font-weight: var(--wgth-text);
+}
+
+.header__title {
+  font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+}
+
+.header__theme-menu {
+  padding-block: 25px;
+}
+
+.theme-menu__item:not(:last-child) {
+  margin-block-end: 14px;
+}
+
+.theme-menu__button {
+  position: relative;
+  left: 9px;
+  text-transform: inherit;
+}
+
+.button {
+  font-family: var(--accent-font);
+  font-size: 14px;
+}
+
+.theme-menu__button:disabled,
+.theme-menu__button:hover,
+.theme-menu__button:active {
+  color: rgba(var(--color-rgb), 0.6);
+}
+
+.theme-menu__button:hover {
+  cursor: pointer;
+}
+
+.theme-menu__button:disabled::before {
+  content: '▶';
+  position: absolute;
+  left: calc(-1 * (14px + var(--pseudo-gap)));
+}
+
+.main,
+.image-container,
+.image {
+  inline-size: 100%;
+}
+
+.main__card:not(:last-of-type) {
+  margin-block-end: 50px;
+}
+
+.card__title {
+  padding: 4px 10px;
+  font-size: inherit;
+  font-variation-settings: 'wgth' var(--wgth-title);
+}
+
+.image-container {
+  
+}
+
+.image {
+  object-fit: contain;
+	object-position: center;
+  border-block-start: var(--border);
+  border-block-end: var(--border);
+}
+
+.text-container {
+  padding: 21px 25px 0;
+  line-height: 21px; /* 116.667% */
+}
+
+.card__text:not(:last-of-type) {
+  margin-block-end: 27px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: end;
+  gap: 12px;
+  padding-block: 25px;
+}
+
+.card__like-button {
+  inline-size: 130px;
+  block-size: 38px;
+  padding: 9px 17px;
+  border: var(--border);
+  line-height: 90%; /* 12.6px */
+}
+
+@media (width <= 375px) {
+  :root {
+    --title-padding: 120px;
+    --pseudo-gap: 5px;
+  }
 }
