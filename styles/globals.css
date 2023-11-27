@@ -34,12 +34,16 @@ button,
 input {
   color: currentColor;
   font-family: inherit;
-  font-size: inherit;
   line-height: inherit;
   font-style: inherit;
   background-color: transparent;
   border: none;
   padding: 0;
+}
+
+button,
+img {
+  display: block;
 }
 
 ul,
