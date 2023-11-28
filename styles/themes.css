@@ -6,90 +6,93 @@
 */
 
 :root.theme-light {
-  --wgth-text: 400;
-  --wgth-title: 700;
-  --bg-color: #fff;
-  --color: #000;
-  --color-rgb: 0, 0, 0;
-  --bg-image: repeating-linear-gradient(
+	--wgth-text: 400;
+	--wgth-title: 700;
+	--bg-color: #fff;
+	--color: #000;
+	--color-rgb: 0, 0, 0;
+	--bg-image: repeating-linear-gradient(
 			to right,
 			#d3d3d3,
 			#d3d3d3 2px,
 			rgba(211, 211, 211, 0) 2px,
 			rgba(211, 211, 211, 0) 4px
 		),
-    repeating-linear-gradient(
+		repeating-linear-gradient(
 			to bottom,
 			#d3d3d3,
 			#d3d3d3 2px,
 			rgba(211, 211, 211, 0) 2px,
 			rgba(211, 211, 211, 0) 4px
 		),
-		linear-gradient(
-			to bottom,
-			#e7e7e7 0.01%,
-			#1a1a1a
-		);
+		linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
+}
+
+.theme-light .button__text,
+.theme-light .save-button__icon {
+	color: var(--bg-color);
 }
 
 :root.theme-dark {
-  --bg-color: #000;
-  --color: #00CC14;
-  --color-rgb: 0, 204, 20;
-  --bg-image: repeating-linear-gradient(
+	--bg-color: #000;
+	--color: #00cc14;
+	--color-rgb: 0, 204, 20;
+	--bg-image: repeating-linear-gradient(
 			to right,
 			#000,
 			#000 2px,
 			rgba(211, 211, 211, 0) 2px,
 			rgba(211, 211, 211, 0) 4px
 		),
-    repeating-linear-gradient(
+		repeating-linear-gradient(
 			to bottom,
 			#000,
 			#000 2px,
 			rgba(0, 0, 0, 0) 2px,
 			rgba(0, 0, 0, 0) 4px
 		),
-		linear-gradient(
-			to bottom,
-			#007f0c,
-			#004306
-		);
+		linear-gradient(to bottom, #007f0c, #004306);
 }
 
 .theme-dark .main {
-  --wgth-text: 465;
-  --wgth-title: 785;
+	--wgth-text: 465;
+	--wgth-title: 785;
+}
+
+.theme-dark .button__text,
+.theme-dark .save-button__icon {
+	color: var(--color);
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-  --bg-color: #000;
-  --color: #00CC14;
-  --color-rgb: 0, 204, 20;
-  --bg-image: repeating-linear-gradient(
-			to right,
-			#000,
-			#000 2px,
-			rgba(211, 211, 211, 0) 2px,
-			rgba(211, 211, 211, 0) 4px
-		),
-    repeating-linear-gradient(
-			to bottom,
-			#000,
-			#000 2px,
-			rgba(0, 0, 0, 0) 2px,
-			rgba(0, 0, 0, 0) 4px
-		),
-		linear-gradient(
-			to bottom,
-			#007f0c,
-			#004306
-		);
-  }
+	:root {
+		--bg-color: #000;
+		--color: #00cc14;
+		--color-rgb: 0, 204, 20;
+		--bg-image: repeating-linear-gradient(
+				to right,
+				#000,
+				#000 2px,
+				rgba(211, 211, 211, 0) 2px,
+				rgba(211, 211, 211, 0) 4px
+			),
+			repeating-linear-gradient(
+				to bottom,
+				#000,
+				#000 2px,
+				rgba(0, 0, 0, 0) 2px,
+				rgba(0, 0, 0, 0) 4px
+			),
+			linear-gradient(to bottom, #007f0c, #004306);
+	}
 
-  .main {
-    --wgth-text: 465;
-    --wgth-title: 785;
-  }
+	.main {
+		--wgth-text: 465;
+		--wgth-title: 785;
+	}
+
+	.button__text,
+	.save-button__icon {
+		color: var(--color);
+	}
 }

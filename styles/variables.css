@@ -5,13 +5,14 @@
 	--wgth-text: 400;
 	--wgth-title: 700;
 	--bg-color: #fff;
-  --stroke-color: var(--bg-color);
+	--stroke-color: var(--bg-color);
 	--color: #000;
-  --color-rgb: 0, 0, 0;
-  --pseudo-gap: 6px;
-  --inline-size: clamp(23.5rem, 16.3697rem + 30.4225vw, 43.75rem);
-  --icon-inline-size: 21px;
-  --border: 2px solid currentColor;
+	--color-rgb: 0, 0, 0;
+	--pseudo-gap: 6px;
+	--inline-size: clamp(23.5rem, 16.3697rem + 30.4225vw, 43.75rem);
+	--icon-inline-size: 21px;
+	--border: 2px solid currentColor;
+	--fill-heart: #ff0000;
 	--bg-image: repeating-linear-gradient(
 			to right,
 			#d3d3d3,
@@ -19,16 +20,12 @@
 			rgba(211, 211, 211, 0) 2px,
 			rgba(211, 211, 211, 0) 4px
 		),
-    repeating-linear-gradient(
+		repeating-linear-gradient(
 			to bottom,
 			#d3d3d3,
 			#d3d3d3 2px,
 			rgba(211, 211, 211, 0) 2px,
 			rgba(211, 211, 211, 0) 4px
 		),
-		linear-gradient(
-			to bottom,
-			#e7e7e7 0.01%,
-			#1a1a1a
-		);
+		linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
 }
