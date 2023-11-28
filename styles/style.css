@@ -28,7 +28,7 @@
 	font-family: var(--general-font);
 	font-size: 14px;
 	font-style: normal;
-	font-variation-settings: 'wgth' var(--wgth-text);
+	font-variation-settings: 'wght' var(--wgth-text);
 	color: var(--color);
 	line-height: normal;
 	background-image: var(--bg-image);
@@ -159,9 +159,8 @@
 
 .card__title {
 	padding: 5px 10px 3px;
-	font-size: inherit;
 	font-size: 18px;
-	font-variation-settings: 'wgth' var(--wgth-title);
+	font-variation-settings: 'wght' var(--wgth-title);
 	min-block-size: 33px;
 	border-block-end: var(--border);
 }
